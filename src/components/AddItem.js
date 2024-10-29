@@ -31,7 +31,7 @@ class AddItem extends React.Component {
             aria-describedby="name"
             name="productName"
             onChange={(e) => {
-              this.setState({ productName: Number(e.currentTarget.value) });
+              this.setState({ productName: e.currentTarget.value });
             }}
             value={this.state.productName}
           />
@@ -46,7 +46,7 @@ class AddItem extends React.Component {
             id="price"
             name="productPrice"
             onChange={(e) => {
-              this.setState({ productPrice: e.currentTarget.value });
+              this.setState({ productPrice: Number(e.currentTarget.value) });
             }}
             value={this.state.productPrice}
           />
