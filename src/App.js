@@ -63,7 +63,7 @@ function App() {
 
   const addItem = (name, price) => {
     let newProductList = [...productList];
-    newProductList.pusp({
+    newProductList.push({
       price: price,
       name: name,
       quantity: 0,
